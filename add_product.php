@@ -6,8 +6,7 @@
   $all_categories = find_all('categories');
   $all_photo = find_all('media');
   $users = find_all('users');
-debug_to_console($users);
-debug_to_console($all_categories);
+
 ?>
 <?php
  if(isset($_POST['add_product'])){
