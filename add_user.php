@@ -63,17 +63,23 @@ $groups = find_all('organisations');
                 <input type="text" class="form-control" name="full-name" placeholder="Full Name">
             </div>
               <div class="form-group">
-                  <label for="username">Username</label>
+                  <label for="username">Login</label>
                   <input type="text" class="form-control" name="username" placeholder="Username">
               </div>
               <div class="form-group">
-                  <label for="email">Username</label>
+                  <label for="email">Email</label>
                   <input type="email" class="form-control" name="email" placeholder="Email">
               </div>
               <div class="form-group">
-                  <label for="phone">Username</label>
+                  <label for="phone">Phone</label>
                   <input type="phone" class="form-control" name="phone" placeholder="Phone">
               </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name ="password"  placeholder="Password">
+            </div>
+
               <div class="form-group">
                   <label for="exampleFormControlSelectdimencion10">Language</label>
                   <select class="form-control" id="exampleFormControlSelectdimencion10" name="language"  >
@@ -83,12 +89,6 @@ $groups = find_all('organisations');
                   </select>
 
               </div>
-
-
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" name ="password"  placeholder="Password">
-            </div>
 
               <div class="form-group">
                   <label for="level">Organisation</label>
