@@ -5,6 +5,7 @@
   page_require_level(2);
   $all_categories = find_all('categories');
   $all_photo = find_all('media');
+  $users = find_all('users');
 ?>
 <?php
  if(isset($_POST['add_product'])){
@@ -182,13 +183,12 @@
 
 
                    <div class="col-md-12">
-                       <div class="btn-group">
-                           <label for="exampleFormControlSelectdimencion">Owner</label>
-                           <select class="form-control" id="exampleFormControlSelectdimencion" name="saleing-owner"  >
-                               <option>UCE</option>
-                               <option>SK</option>
-                               <option>WL</option>
-                           </select>
+                       <label for="saleing-owner">Owner</label>
+                       <select class="form-control" name="saleing-owner">
+                           <?php foreach ($user as $users ):?>
+                               <option value="<?php echo $user['id'];?>"><?php echo ucwords($user['name']);?></option>
+                           <?php endforeach;?>
+                       </select>
                    </div>
 
 
