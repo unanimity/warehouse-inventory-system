@@ -4,9 +4,9 @@
   // Checkin What level user has permission to view this page
   page_require_level(1);
 $groups = find_all('user_groups');
-echo $groups;
-$organisations = find_all('organisations');
-echo $organisations;
+
+$all_organisations = find_all('organisations');
+
 ?>
 <?php
   if(isset($_POST['add_user'])){
@@ -91,10 +91,10 @@ echo $organisations;
               </div>
 
               <div class="form-group">
-                  <label for="level">Organisation</label>
+                  <label for="organisation">Organisation</label>
                   <select class="form-control" name="organisation">
-                      <?php foreach ($organisation as $organisations ):?>
-                          <option value="<?php echo $organisation['id_org'];?>"><?php echo ucwords($organisation['org_name']);?></option>
+                      <?php foreach ($org  as $all_organisations ):?>
+                          <option value="<?php echo $org['id_org'];?>"><?php echo ucwords($org['org_name']);?></option>
                       <?php endforeach;?>
                   </select>
               </div>
