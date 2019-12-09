@@ -16,6 +16,18 @@
      $p_qty   = remove_junk($db->escape($_POST['product-quantity']));
      $p_buy   = remove_junk($db->escape($_POST['buying-price']));
      $p_sale  = remove_junk($db->escape($_POST['saleing-price']));
+
+     /**/
+       $p_discription  = remove_junk($db->escape($_POST['saleing-discription']));
+       $p_type  = remove_junk($db->escape($_POST['saleing-type']));
+       $p_value  = remove_junk($db->escape($_POST['saleing-value']));
+       $p_dimencion  = remove_junk($db->escape($_POST['saleing-dimencion']));
+       $p_owner  = remove_junk($db->escape($_POST['saleing-owner']));
+       $p_cell  = remove_junk($db->escape($_POST['saleing-cell']));
+       $p_code  = remove_junk($db->escape($_POST['saleing-code']));
+
+
+     /**/
      if (is_null($_POST['product-photo']) || $_POST['product-photo'] === "") {
        $media_id = '0';
      } else {
@@ -23,9 +35,9 @@
      }
      $date    = make_date();
      $query  = "INSERT INTO products (";
-     $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date";
+     $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date,discription,value,dimension,type,owner,cell,code";
      $query .=") VALUES (";
-     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}'";
+     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}', '{$p_discription}', '{$p_type}', '{$p_value}', '{$p_dimencion}', '{$p_owner}', '{$p_cell}', '{$p_code}'";
      $query .=")";
      $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
      if($db->query($query)){
@@ -139,7 +151,7 @@
 
 
 
-                   <div class="form-group">
+                   <div class="col-md-12">
                        <label for="exampleFormControlSelect1">Type</label>
                        <select class="form-control" id="exampleFormControlSelect1" name="saleing-type" >
                            <option>Component</option>
@@ -150,11 +162,12 @@
                    </div>
 
 
-                   <div class="col-md-4">
+                   <div class="col-md-12">
                        <div class="input-group">
                       <span class="input-group-addon">
                         <i class="glyphicon glyphicon glyphicon-menu-lef"></i>
                       </span>
+                           <label for="exampleFormControlSelectdimencion">Value</label>
                            <input type="number" class="form-control" name="saleing-value" placeholder="value" value="0">
                        </div>
                        <label for="exampleFormControlSelectdimencion">Dimencion</label>
@@ -171,10 +184,10 @@
 
 
 
-                   <div class="col-md-4">
+                   <div class="col-md-12">
                        <div class="btn-group">
 
-                           <label for="exampleFormControlSelectdimencion">Dimencion</label>
+                           <label for="exampleFormControlSelectdimencion">Owner</label>
                            <select class="form-control" id="exampleFormControlSelectdimencion" name="saleing-owner"  >
                                <option>UCE</option>
                                <option>SK</option>
