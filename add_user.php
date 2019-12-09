@@ -16,8 +16,6 @@ $organisations = find_all('organisations');
        $name   = remove_junk($db->escape($_POST['full-name']));
        $username   = remove_junk($db->escape($_POST['username']));
        $password   = remove_junk($db->escape($_POST['password']));
-
-
        $organisation   = remove_junk($db->escape($_POST['organisation']));
        $email  = remove_junk($db->escape($_POST['email']));
        $phone   = remove_junk($db->escape($_POST['phone']));
