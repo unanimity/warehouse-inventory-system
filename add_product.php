@@ -164,15 +164,12 @@
 
                    <div class="col-md-12">
                        <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="glyphicon glyphicon glyphicon-menu-lef"></i>
-                      </span>
-                           <label for="exampleFormControlSelectdimencion">Value</label>
+                           <label>Value</label>
                            <input type="number" class="form-control" name="saleing-value" placeholder="value" value="0">
                        </div>
-                       <label for="exampleFormControlSelectdimencion">Dimencion</label>
-                       <select class="form-control" id="exampleFormControlSelectdimencion" name="saleing-dimencion"  >
-                           <option>kOm</option>
+                       <label for="exampleFormControlSelectdimencion10">Dimencion</label>
+                       <select class="form-control" id="exampleFormControlSelectdimencion10" name="saleing-dimencion"  >
+                           <option>none</option>
                            <option>pF</option>
                            <option>m</option>
                            <option>kg</option>
@@ -186,7 +183,6 @@
 
                    <div class="col-md-12">
                        <div class="btn-group">
-
                            <label for="exampleFormControlSelectdimencion">Owner</label>
                            <select class="form-control" id="exampleFormControlSelectdimencion" name="saleing-owner"  >
                                <option>UCE</option>
@@ -198,7 +194,7 @@
 
                    <div class="col-md-12">
                        <div class="input-group">
-
+                           <label >Cell</label>
                            <input type="text" class="form-control" name="saleing-cell"  value=" ">
 
                        </div>
@@ -207,7 +203,7 @@
 
                    <div class="col-md-12">
                        <div class="input-group">
-
+                           <label >Code</label>
                            <input type="text" class="form-control" name="saleing-code"  value="0">
 
                        </div>
