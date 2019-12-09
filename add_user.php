@@ -3,7 +3,8 @@
   require_once('includes/load.php');
   // Checkin What level user has permission to view this page
   page_require_level(1);
-  $groups = find_all('user_groups');
+$groups = find_all('user_groups');
+$groups = find_all('organisations');
 ?>
 <?php
   if(isset($_POST['add_user'])){
@@ -12,15 +13,22 @@
    validate_fields($req_fields);
 
    if(empty($errors)){
-           $name   = remove_junk($db->escape($_POST['full-name']));
+       $name   = remove_junk($db->escape($_POST['full-name']));
        $username   = remove_junk($db->escape($_POST['username']));
        $password   = remove_junk($db->escape($_POST['password']));
+
+
+       $organisation   = remove_junk($db->escape($_POST['organisation']));
+       $email  = remove_junk($db->escape($_POST['email']));
+       $phone   = remove_junk($db->escape($_POST['phone']));
+       $language  = remove_junk($db->escape($_POST['language']));
+
        $user_level = (int)$db->escape($_POST['level']);
        $password = sha1($password);
         $query = "INSERT INTO users (";
-        $query .="name,username,password,user_level,status";
+        $query .="name,username,password,user_level,status,organisation,email,phone,language";
         $query .=") VALUES (";
-        $query .=" '{$name}', '{$username}', '{$password}', '{$user_level}','1'";
+        $query .=" '{$name}', '{$username}', '{$password}', '{$user_level}','1', '{$organisation}', '{$email}', '{$phone}', '{$language}'";
         $query .=")";
         if($db->query($query)){
           //sucess
@@ -54,14 +62,43 @@
                 <label for="name">Name</label>
                 <input type="text" class="form-control" name="full-name" placeholder="Full Name">
             </div>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" class="form-control" name="username" placeholder="Username">
-            </div>
+              <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" name="username" placeholder="Username">
+              </div>
+              <div class="form-group">
+                  <label for="email">Username</label>
+                  <input type="email" class="form-control" name="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                  <label for="phone">Username</label>
+                  <input type="phone" class="form-control" name="phone" placeholder="Phone">
+              </div>
+              <div class="form-group">
+                  <label for="exampleFormControlSelectdimencion10">Language</label>
+                  <select class="form-control" id="exampleFormControlSelectdimencion10" name="language"  >
+                      <option>EN</option>
+                      <option>ES</option>
+                      <option>RUS</option>
+                  </select>
+
+              </div>
+
+
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" class="form-control" name ="password"  placeholder="Password">
             </div>
+
+              <div class="form-group">
+                  <label for="level">Organisation</label>
+                  <select class="form-control" name="organisation">
+                      <?php foreach ($organisation as $organisations ):?>
+                          <option value="<?php echo $organisation['id_org'];?>"><?php echo ucwords($organisation['org_name']);?></option>
+                      <?php endforeach;?>
+                  </select>
+              </div>
+
             <div class="form-group">
               <label for="level">User Role</label>
                 <select class="form-control" name="level">
@@ -70,6 +107,9 @@
                 <?php endforeach;?>
                 </select>
             </div>
+
+
+
             <div class="form-group clearfix">
               <button type="submit" name="add_user" class="btn btn-primary">Add User</button>
             </div>
