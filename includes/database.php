@@ -15,12 +15,15 @@ class MySqli_DB {
 /*--------------------------------------------------------------*/
 public function db_connect()
 {
-    mysqli_set_charset('utf8');
+
   $this->con = mysqli_connect(DB_HOST,DB_USER,DB_PASS);
   if(!$this->con)
          {
            die(" Database connection failed:". mysqli_connect_error());
          } else {
+          mysql_query("SET NAMES 'utf8';");
+          mysql_query("SET CHARACTER SET 'utf8';");
+          mysql_query("SET SESSION collation_connection = 'utf8_general_ci';");
            $select_db = $this->con->select_db(DB_NAME);
              if(!$select_db)
              {
