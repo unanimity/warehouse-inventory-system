@@ -10,10 +10,11 @@
  if(isset($_POST['add_cat'])){
    $req_field = array('categorie-name');
    validate_fields($req_field);
-   $cat_name = remove_junk($db->escape($_POST['categorie-name']));
+     $cat_name = remove_junk($db->escape($_POST['categorie-name']));
+     $cat_sub_name = remove_junk($db->escape($_POST['categorie-sub-name']));
    if(empty($errors)){
-      $sql  = "INSERT INTO categories (name)";
-      $sql .= " VALUES ('{$cat_name}')";
+      $sql  = "INSERT INTO categories (name,sub_name)";
+      $sql .= " VALUES ('{$cat_name}','{$cat_sub_name}')";
       if($db->query($sql)){
         $session->msg("s", "Successfully Added Categorie");
         redirect('categorie.php',false);
@@ -45,9 +46,12 @@
         </div>
         <div class="panel-body">
           <form method="post" action="categorie.php">
-            <div class="form-group">
-                <input type="text" class="form-control" name="categorie-name" placeholder="Categorie Name">
-            </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" name="categorie-name" placeholder="Categorie Name">
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control" name="categorie-sub-name" placeholder="Categorie Sub Name">
+              </div>
             <button type="submit" name="add_cat" class="btn btn-primary">Add categorie</button>
         </form>
         </div>
