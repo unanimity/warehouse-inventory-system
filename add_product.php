@@ -100,7 +100,7 @@
                      <span class="input-group-addon">
                       <i class="glyphicon glyphicon-shopping-cart"></i>
                      </span>
-                     <input type="number" class="form-control" name="product-quantity" placeholder="Product Quantity">
+                     <input type="number" class="form-control" name="product-quantity" placeholder="Product Quantity" value="0">
                   </div>
                  </div>
                  <div class="col-md-4">
@@ -108,19 +108,108 @@
                      <span class="input-group-addon">
                        <i class="glyphicon glyphicon-usd"></i>
                      </span>
-                     <input type="number" class="form-control" name="buying-price" placeholder="Buying Price">
+                     <input type="number" class="form-control" name="buying-price" placeholder="Buying Price" value="0">
                      <span class="input-group-addon">.00</span>
                   </div>
                  </div>
-                  <div class="col-md-4">
-                    <div class="input-group">
+                   <div class="col-md-4">
+                       <div class="input-group">
                       <span class="input-group-addon">
                         <i class="glyphicon glyphicon-usd"></i>
                       </span>
-                      <input type="number" class="form-control" name="saleing-price" placeholder="Selling Price">
-                      <span class="input-group-addon">.00</span>
+                           <input type="number" class="form-control" name="saleing-price" placeholder="Selling Price" value="0">
+                           <span class="input-group-addon">.00</span>
+                       </div>
                    </div>
-                  </div>
+
+
+
+
+                   <div class="col-md-4">
+                       <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-usd"></i>
+                      </span>
+                           <label for="exampleFormControlTextarea2">Small textarea</label>
+                       <textarea class="form-control rounded-0" name="saleing-discription" rows="3"></textarea>
+                       </div>
+                   </div>
+
+                   <div class="col-md-4">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-danger dropdown-toggle" name="saleing-type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Action
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div>
+                   </div>
+
+
+                   <div class="col-md-4">
+                       <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-usd"></i>
+                      </span>
+                           <input type="number" class="form-control" name="saleing-value" placeholder="value" value="0">
+
+                       </div>
+                   </div>
+
+                   <div class="col-md-4">
+                       <div class="btn-group">
+                           <button type="button" class="btn btn-danger dropdown-toggle" name="saleing-dimencion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Action
+                           </button>
+                           <div class="dropdown-menu">
+
+                               <div class="dropdown-divider">H</div>
+                               <div class="dropdown-divider">F</div>
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <div class="col-md-4">
+                       <div class="btn-group">
+                           <button type="button" class="btn btn-danger dropdown-toggle" name="saleing-owner" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               Action
+                           </button>
+                           <div class="dropdown-menu">
+
+                               <div class="dropdown-divider">UCE</div>
+                               <div class="dropdown-divider">None</div>
+                           </div>
+                       </div>
+                   </div>
+
+
+                   <div class="col-md-4">
+                       <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-usd"></i>
+                      </span>
+                           <input type="text" class="form-control" name="saleing-cell"  value=" ">
+                           <span class="input-group-addon">.00</span>
+                       </div>
+                   </div>
+                   <div class="col-md-4">
+                       <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-usd"></i>
+                      </span>
+                           <input type="text" class="form-control" name="saleing-code"  value="0">
+
+                       </div>
+                   </div>
+
+
+
                </div>
               </div>
               <button type="submit" name="add_product" class="btn btn-danger">Add product</button>
