@@ -138,14 +138,14 @@
                    </div>
 
 
+
                    <div class="form-group">
                        <label for="exampleFormControlSelect1">Type</label>
                        <select class="form-control" id="exampleFormControlSelect1" name="saleing-type" >
-                           <option>1</option>
-                           <option>2</option>
-                           <option>3</option>
-                           <option>4</option>
-                           <option>5</option>
+                           <option>Component</option>
+                           <option>Device</option>
+                           <option>Material</option>
+                           <option>Liquid</option>
                        </select>
                    </div>
 
@@ -153,55 +153,48 @@
                    <div class="col-md-4">
                        <div class="input-group">
                       <span class="input-group-addon">
-                        <i class="glyphicon glyphicon-usd"></i>
+                        <i class="glyphicon glyphicon glyphicon-menu-lef"></i>
                       </span>
                            <input type="number" class="form-control" name="saleing-value" placeholder="value" value="0">
-
                        </div>
+                       <label for="exampleFormControlSelectdimencion">Dimencion</label>
+                       <select class="form-control" id="exampleFormControlSelectdimencion" name="saleing-dimencion"  >
+                           <option>kOm</option>
+                           <option>pF</option>
+                           <option>m</option>
+                           <option>kg</option>
+                           <option>g</option>
+                           <option>l</option>
+                           <option>V</option>
+                       </select>
                    </div>
 
-                   <div class="col-md-4">
-                       <div class="btn-group">
-                           <button type="button" class="btn btn-danger dropdown-toggle" name="saleing-dimencion" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               Action
-                           </button>
-                           <div class="dropdown-menu">
-
-                               <div class="dropdown-divider">H</div>
-                               <div class="dropdown-divider">F</div>
-                           </div>
-                       </div>
-                   </div>
 
 
                    <div class="col-md-4">
                        <div class="btn-group">
-                           <button type="button" class="btn btn-danger dropdown-toggle" name="saleing-owner" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                               Action
-                           </button>
-                           <div class="dropdown-menu">
 
-                               <div class="dropdown-divider">UCE</div>
-                               <div class="dropdown-divider">None</div>
-                           </div>
-                       </div>
+                           <label for="exampleFormControlSelectdimencion">Dimencion</label>
+                           <select class="form-control" id="exampleFormControlSelectdimencion" name="saleing-owner"  >
+                               <option>UCE</option>
+                               <option>SK</option>
+                               <option>WL</option>
+                           </select>
                    </div>
 
 
-                   <div class="col-md-4">
+                   <div class="col-md-12">
                        <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="glyphicon glyphicon-usd"></i>
-                      </span>
+
                            <input type="text" class="form-control" name="saleing-cell"  value=" ">
-                           <span class="input-group-addon">.00</span>
+
                        </div>
                    </div>
-                   <div class="col-md-4">
+
+
+                   <div class="col-md-12">
                        <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="glyphicon glyphicon-usd"></i>
-                      </span>
+
                            <input type="text" class="form-control" name="saleing-code"  value="0">
 
                        </div>
