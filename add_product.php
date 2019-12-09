@@ -133,33 +133,23 @@
                    <div class="col-md-12">
                        <label>Description</label>
                        <div class="input-group">
-                      <span class="input-group-addon">
-                        <i class="glyphicon glyphicon-usd"></i>
-                      </span>
-                           <label for="exampleFormControlTextarea2">Small textarea</label>
                        <textarea class="form-control rounded-0" name="saleing-discription" rows="3"></textarea>
                        </div>
                    </div>
 
 
 
-                   <!-- Bootstrap 4 -->
-                   <div class="btn-group">
-                       <!-- Кнопка -->
-                       <label>Description</label>
-                       <button type="button" class="btn btn-primary dropdown-toggle"  name="saleing-type"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Выполнить
-                       </button>
-                       <!-- Меню -->
-                       <div class="dropdown-menu">
-                           <a class="dropdown-item" href="#">Действие 1</a>
-                           <a class="dropdown-item" href="#">Действие 2</a>
-                           <a class="dropdown-item" href="#">Действие 3</a>
-                           <div class="dropdown-divider"></div>
-                           <a class="dropdown-item" href="#">Действие 4</a>
-                       </div>
-                   </div>
 
+                   <div class="form-group">
+                       <label for="exampleFormControlSelect2">Type</label>
+                       <select multiple class="form-control" id="exampleFormControlSelect2" name="saleing-type" >
+                           <option>1</option>
+                           <option>2</option>
+                           <option>3</option>
+                           <option>4</option>
+                           <option>5</option>
+                       </select>
+                   </div>
 
 
 
