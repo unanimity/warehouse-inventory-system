@@ -1,6 +1,6 @@
 ## Oswa - inv
 
-
+replika
 ![OSWA-INV v2 image](https://scontent-iad3-1.xx.fbcdn.net/v/t31.0-8/12045296_896994067005023_5505146103193104549_o.jpg?oh=4afd029c1486604d29f672d76becb8bc&oe=5921F70A " Warehouse inventory system ")
 #Warehouse inventory system
 - - - -
