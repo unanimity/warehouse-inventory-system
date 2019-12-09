@@ -37,7 +37,7 @@
      $query  = "INSERT INTO products (";
      $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date,discription,value,dimension,type,owner,cell,code";
      $query .=") VALUES (";
-     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}', '{$p_discription}', '{$p_type}', '{$p_value}', '{$p_dimencion}', '{$p_owner}', '{$p_cell}', '{$p_code}'";
+     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}', '{$p_discription}', '{$p_value}', '{$p_dimencion}', '{$p_type}', '{$p_owner}', '{$p_cell}', '{$p_code}'";
      $query .=")";
      $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
      if($db->query($query)){
