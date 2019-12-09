@@ -185,8 +185,8 @@
                    <div class="col-md-12">
                        <label for="saleing-owner">Owner</label>
                        <select class="form-control" name="saleing-owner">
-                           <?php foreach ($user as $users ):?>
-                               <option value="<?php echo $user['id'];?>"><?php echo ucwords($user['name']);?></option>
+                           <?php foreach ($owner as $users ):?>
+                               <option value="<?php echo $owner['id'];?>"><?php echo ucwords($owner['name']);?></option>
                            <?php endforeach;?>
                        </select>
                    </div>
