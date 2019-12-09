@@ -103,6 +103,9 @@
                      <input type="number" class="form-control" name="product-quantity" placeholder="Product Quantity" value="0">
                   </div>
                  </div>
+
+
+
                  <div class="col-md-4">
                    <div class="input-group">
                      <span class="input-group-addon">
@@ -112,6 +115,8 @@
                      <span class="input-group-addon">.00</span>
                   </div>
                  </div>
+
+
                    <div class="col-md-4">
                        <div class="input-group">
                       <span class="input-group-addon">
@@ -125,7 +130,8 @@
 
 
 
-                   <div class="col-md-4">
+                   <div class="col-md-12">
+                       <label>Description</label>
                        <div class="input-group">
                       <span class="input-group-addon">
                         <i class="glyphicon glyphicon-usd"></i>
@@ -135,20 +141,26 @@
                        </div>
                    </div>
 
-                   <div class="col-md-4">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-danger dropdown-toggle" name="saleing-type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Action
-                      </button>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
-                      </div>
-                    </div>
+
+
+                   <!-- Bootstrap 4 -->
+                   <div class="btn-group">
+                       <!-- Кнопка -->
+                       <label>Description</label>
+                       <button type="button" class="btn btn-primary dropdown-toggle"  name="saleing-type"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Выполнить
+                       </button>
+                       <!-- Меню -->
+                       <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Действие 1</a>
+                           <a class="dropdown-item" href="#">Действие 2</a>
+                           <a class="dropdown-item" href="#">Действие 3</a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="#">Действие 4</a>
+                       </div>
                    </div>
+
+
 
 
                    <div class="col-md-4">
