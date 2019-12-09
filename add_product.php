@@ -133,16 +133,14 @@
                    <div class="col-md-12">
                        <label>Description</label>
                        <div class="input-group">
-                       <textarea class="form-control rounded-0" name="saleing-discription" rows="3"></textarea>
+                       <textarea class="form-control  "  name="saleing-discription" rows="3"></textarea>
                        </div>
                    </div>
 
 
-
-
                    <div class="form-group">
-                       <label for="exampleFormControlSelect2">Type</label>
-                       <select multiple class="form-control" id="exampleFormControlSelect2" name="saleing-type" >
+                       <label for="exampleFormControlSelect1">Type</label>
+                       <select class="form-control" id="exampleFormControlSelect1" name="saleing-type" >
                            <option>1</option>
                            <option>2</option>
                            <option>3</option>
@@ -150,7 +148,6 @@
                            <option>5</option>
                        </select>
                    </div>
-
 
 
                    <div class="col-md-4">
