@@ -5,6 +5,7 @@
   page_require_level(1);
 $groups = find_all('user_groups');
 $organisations = find_all('organisations');
+echo $organisations;
 ?>
 <?php
   if(isset($_POST['add_user'])){
