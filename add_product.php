@@ -6,7 +6,8 @@
   $all_categories = find_all('categories');
   $all_photo = find_all('media');
   $users = find_all('users');
-debug_to_console($users);
+debug_to_console($users[0]);
+debug_to_console($users[1]);
 debug_to_console($all_categories);
 ?>
 <?php
