@@ -28,9 +28,9 @@
         <entry file="file://$PROJECT_DIR$/add_product.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
-              <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
-                <marker date="1575932577380" expanded="true" signature="1650:1672" ph="INSERT INTO products... " />
+                <marker date="1575932617444" expanded="true" signature="1682:1704" ph="INSERT INTO products... " />
               </folding>
             </state>
           </provider>
@@ -230,7 +230,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1575913451537</updated>
-      <workItem from="1575913453350" duration="8180000" />
+      <workItem from="1575913453350" duration="8219000" />
     </task>
     <task id="LOCAL-00001" summary="test ide">
       <created>1575913565828</created>
@@ -243,7 +243,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8180000" />
+    <option name="totallyTimeSpent" value="8219000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -454,9 +454,9 @@
     <entry file="file://$PROJECT_DIR$/add_product.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="9" column="32" lean-forward="false" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
-            <marker date="1575932577380" expanded="true" signature="1650:1672" ph="INSERT INTO products... " />
+            <marker date="1575932617444" expanded="true" signature="1682:1704" ph="INSERT INTO products... " />
           </folding>
         </state>
       </provider>
