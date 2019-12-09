@@ -15,6 +15,7 @@ class MySqli_DB {
 /*--------------------------------------------------------------*/
 public function db_connect()
 {
+    mysqli_set_charset('utf8');
   $this->con = mysqli_connect(DB_HOST,DB_USER,DB_PASS);
   if(!$this->con)
          {
