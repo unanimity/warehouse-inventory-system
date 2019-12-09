@@ -21,9 +21,7 @@ public function db_connect()
          {
            die(" Database connection failed:". mysqli_connect_error());
          } else {
-          mysql_query("SET NAMES 'utf8';");
-          mysql_query("SET CHARACTER SET 'utf8';");
-          mysql_query("SET SESSION collation_connection = 'utf8_general_ci';");
+
            $select_db = $this->con->select_db(DB_NAME);
              if(!$select_db)
              {
