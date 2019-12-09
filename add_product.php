@@ -188,7 +188,7 @@ debug_to_console($users[1]['name']);
                    <div class="col-md-12">
                        <label for="saleing-owner">Owner</label>
                        <select class="form-control" name="saleing-owner">
-                           <?php foreach ($owner as $users ):?>
+                           <?php foreach ( $users as $owner ):?>
                                <option value="<?php echo $owner['id'];?>"><?php echo ucwords($owner['name']);?></option>
                            <?php endforeach;?>
                        </select>
