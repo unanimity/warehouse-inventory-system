@@ -200,13 +200,13 @@ debug_to_console($users[1]['name']);
                    <div class="col-md-12">
                        <div class="input-group">
                            <label >Cell</label>
-                           <input type="text" class="form-control" name="saleing-cell-0"  value=" ">
-                       </div>
-                       <div class="input-group">
                            <input type="text" class="form-control" name="saleing-cell-1"  value=" ">
                        </div>
                        <div class="input-group">
                            <input type="text" class="form-control" name="saleing-cell-2"  value=" ">
+                       </div>
+                       <div class="input-group">
+                           <input type="text" class="form-control" name="saleing-cell-3"  value=" ">
                        </div>
                    </div>
 
