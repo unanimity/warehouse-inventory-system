@@ -71,6 +71,7 @@
                 <tr>
                     <th class="text-center" style="width: 50px;">#</th>
                     <th>Categories</th>
+                    <th>Sub text</th>
                     <th class="text-center" style="width: 100px;">Actions</th>
                 </tr>
             </thead>
