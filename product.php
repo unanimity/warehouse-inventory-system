@@ -13,7 +13,7 @@ $all_categories = find_all('categories');
      </div>
     <div class="col-md-12">
       <div class="panel panel-default">
-          <div class="col-md-6">
+
               <select class="form-control" name="product-categorie">
                   <option value="">Select Product Category</option>
                   <?php  foreach ($all_categories as $cat): ?>
@@ -21,7 +21,7 @@ $all_categories = find_all('categories');
                           <?php echo $cat['name'] ?></option>
                   <?php endforeach; ?>
               </select>
-          </div>
+
 
           <form class="navbar-form navbar-left">
               <div class="form-group">
