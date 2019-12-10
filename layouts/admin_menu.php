@@ -61,12 +61,12 @@
     </li>
     <li>
         <a href="#" class="submenu-toggle">
-            <i class="glyphicon glyphicon-signal"></i>
+            <i class="glyphicon glyphicon glyphicon-unchecked"></i>
             <span>Storage</span>
         </a>
         <ul class="nav submenu">
 
-            <li><a href="storage.php">Monthly cells</a></li>
+            <li><a href="storage.php">Cells</a></li>
 
         </ul>
     </li>

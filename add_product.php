@@ -20,7 +20,7 @@ debug_to_console($users[1]['name']);
      $p_qty   = remove_junk($db->escape($_POST['product-quantity']));
      $p_buy   = remove_junk($db->escape($_POST['buying-price']));
      $p_sale  = remove_junk($db->escape($_POST['saleing-price']));
-
+     $p_datasheet = remove_junk($db->escape($_POST['saleing-datasheet']));
      /**/
        $p_discription  = remove_junk($db->escape($_POST['saleing-discription']));
        $p_type  = remove_junk($db->escape($_POST['saleing-type']));
@@ -39,9 +39,9 @@ debug_to_console($users[1]['name']);
      }
      $date    = make_date();
      $query  = "INSERT INTO products (";
-     $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date,discription,value,dimension,type,owner,cell,code";
+     $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date,discription,value,dimension,type,owner,cell,code,datasheet";
      $query .=") VALUES (";
-     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}', '{$p_discription}', '{$p_value}', '{$p_dimencion}', '{$p_type}', '{$p_owner}', '{$p_cell}', '{$p_code}'";
+     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}', '{$p_discription}', '{$p_value}', '{$p_dimencion}', '{$p_type}', '{$p_owner}', '{$p_cell}', '{$p_code}', '{$p_datasheet}'";
      $query .=")";
      $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
      if($db->query($query)){
@@ -208,6 +208,13 @@ debug_to_console($users[1]['name']);
                        <div class="input-group">
                            <label >Code</label>
                            <input type="text" class="form-control" name="saleing-code"  value="0">
+
+                       </div>
+                   </div>
+                   <div class="col-md-12">
+                       <div class="input-group">
+                           <label >Datasheet</label>
+                           <input type="text" class="form-control" name="saleing-datasheet"  value="">
 
                        </div>
                    </div>
