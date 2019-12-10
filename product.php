@@ -4,6 +4,7 @@
   // Checkin What level user has permission to view this page
    page_require_level(2);
   $products = join_product_table();
+$all_categories = find_all('categories');
 ?>
 <?php include_once('layouts/header.php'); ?>
   <div class="row">
@@ -12,6 +13,16 @@
      </div>
     <div class="col-md-12">
       <div class="panel panel-default">
+          <div class="col-md-6">
+              <select class="form-control" name="product-categorie">
+                  <option value="">Select Product Category</option>
+                  <?php  foreach ($all_categories as $cat): ?>
+                      <option value="<?php echo (int)$cat['id'] ?>">
+                          <?php echo $cat['name'] ?></option>
+                  <?php endforeach; ?>
+              </select>
+          </div>
+
           <form class="navbar-form navbar-left">
               <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
