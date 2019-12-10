@@ -51,8 +51,10 @@
                   <td class="text-center"> <?php echo remove_junk($product['type']); ?></td>
                 <td class="text-center"> <?php echo remove_junk($product['quantity']); ?></td>
                 <td class="text-center"> <?php echo remove_junk($product['discription']); ?>
-                    <a display=<?php if ($product['datasheet']!="") {echo "false"} else echo "true"; ?> href="<?php  echo remove_junk($product['datasheet']); ?>">
-                              <i class="glyphicon glyphicon glyphicon-share-alt"></i>
+                    <a  href="<?php  echo remove_junk($product['datasheet']); ?>">
+
+                        <?php if ($product['datasheet'])  echo "<i class=\"glyphicon glyphicon glyphicon-share-alt\"></i>" ; ?>
+
                     </a>
                 </td>
                   <td class="text-center"> <?php echo remove_junk($product['value']); ?></td>
