@@ -46,7 +46,7 @@
                   <img class="img-avatar img-circle" src="uploads/products/<?php echo $product['image']; ?>" alt="">
                 <?php endif; ?>
                 </td>
-                <td> <?php echo remove_junk($product['name']); ?></td>
+                <td> <a href="<?php echo  "/edit_product.php?id=".remove_junk($product['id']); ?>"><?php echo remove_junk($product['name']); ?></a></td>
                   <td class="text-center"> <?php echo remove_junk($product['categorie']); ?></td>
                   <td class="text-center"> <?php echo remove_junk($product['type']); ?></td>
                 <td class="text-center"> <?php echo remove_junk($product['quantity']); ?></td>
