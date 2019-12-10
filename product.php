@@ -12,6 +12,13 @@
      </div>
     <div class="col-md-12">
       <div class="panel panel-default">
+          <form class="navbar-form navbar-left">
+              <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+
         <div class="panel-heading clearfix">
          <div class="pull-right">
            <a href="add_product.php" class="btn btn-primary">Add New</a>
