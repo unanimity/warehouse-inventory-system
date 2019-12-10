@@ -31,7 +31,7 @@ debug_to_console($users[1]['name']);
        $p_cell_2  = remove_junk($db->escape($_POST['saleing-cell-2']));
        $p_cell_3  = remove_junk($db->escape($_POST['saleing-cell-3']));
        $p_code  = remove_junk($db->escape($_POST['saleing-code']));
-
+       $p_cell= $p_cell_1 . "-".$p_cell_2 ."-". $p_cell_3;
 
      /**/
      if (is_null($_POST['product-photo']) || $_POST['product-photo'] === "") {
@@ -43,7 +43,7 @@ debug_to_console($users[1]['name']);
      $query  = "INSERT INTO products (";
      $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date,discription,value,dimension,type,owner,cell,code,datasheet";
      $query .=") VALUES (";
-     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}', '{$p_discription}', '{$p_value}', '{$p_dimencion}', '{$p_type}', '{$p_owner}', '{$p_cell_1 . $p_cell_2 . $p_cell_3}', '{$p_code}', '{$p_datasheet}'";
+     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}', '{$p_discription}', '{$p_value}', '{$p_dimencion}', '{$p_type}', '{$p_owner}', '{$p_cell}', '{$p_code}', '{$p_datasheet}'";
      $query .=")";
      $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
      if($db->query($query)){
