@@ -27,7 +27,9 @@ debug_to_console($users[1]['name']);
        $p_value  = remove_junk($db->escape($_POST['saleing-value']));
        $p_dimencion  = remove_junk($db->escape($_POST['saleing-dimencion']));
        $p_owner  = remove_junk($db->escape($_POST['saleing-owner']));
-       $p_cell  = remove_junk($db->escape($_POST['saleing-cell']));
+       $p_cell_1  = remove_junk($db->escape($_POST['saleing-cell-1']));
+       $p_cell_2  = remove_junk($db->escape($_POST['saleing-cell-2']));
+       $p_cell_3  = remove_junk($db->escape($_POST['saleing-cell-3']));
        $p_code  = remove_junk($db->escape($_POST['saleing-code']));
 
 
@@ -41,7 +43,7 @@ debug_to_console($users[1]['name']);
      $query  = "INSERT INTO products (";
      $query .=" name,quantity,buy_price,sale_price,categorie_id,media_id,date,discription,value,dimension,type,owner,cell,code,datasheet";
      $query .=") VALUES (";
-     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}', '{$p_discription}', '{$p_value}', '{$p_dimencion}', '{$p_type}', '{$p_owner}', '{$p_cell}', '{$p_code}', '{$p_datasheet}'";
+     $query .=" '{$p_name}', '{$p_qty}', '{$p_buy}', '{$p_sale}', '{$p_cat}', '{$media_id}', '{$date}', '{$p_discription}', '{$p_value}', '{$p_dimencion}', '{$p_type}', '{$p_owner}', '{$p_cell_1 . $p_cell_2 . $p_cell_3}', '{$p_code}', '{$p_datasheet}'";
      $query .=")";
      $query .=" ON DUPLICATE KEY UPDATE name='{$p_name}'";
      if($db->query($query)){
@@ -198,11 +200,15 @@ debug_to_console($users[1]['name']);
                    <div class="col-md-12">
                        <div class="input-group">
                            <label >Cell</label>
-                           <input type="text" class="form-control" name="saleing-cell"  value=" ">
-
+                           <input type="text" class="form-control" name="saleing-cell-0"  value=" ">
+                       </div>
+                       <div class="input-group">
+                           <input type="text" class="form-control" name="saleing-cell-1"  value=" ">
+                       </div>
+                       <div class="input-group">
+                           <input type="text" class="form-control" name="saleing-cell-2"  value=" ">
                        </div>
                    </div>
-
 
                    <div class="col-md-12">
                        <div class="input-group">

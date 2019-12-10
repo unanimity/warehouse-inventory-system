@@ -52,9 +52,7 @@
                 <td class="text-center"> <?php echo remove_junk($product['quantity']); ?></td>
                 <td class="text-center"> <?php echo remove_junk($product['discription']); ?>
                     <a href="<?php echo remove_junk($product['datasheet']); ?>">
-                        <span class="input-group-addon">
                               <i class="glyphicon glyphicon glyphicon-share-alt"></i>
-                        </span>
                     </a>
                 </td>
                   <td class="text-center"> <?php echo remove_junk($product['value']); ?></td>
@@ -74,7 +72,7 @@
               </tr>
              <?php endforeach; ?>
             </tbody>
-          </tabel>
+          </table>
         </div>
       </div>
     </div>
