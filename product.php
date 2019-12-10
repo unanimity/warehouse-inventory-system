@@ -14,21 +14,7 @@ $all_categories = find_all('categories');
     <div class="col-md-12">
       <div class="panel panel-default">
 
-              <select class="form-control" name="product-categorie">
-                  <option value="">Select Product Category</option>
-                  <?php  foreach ($all_categories as $cat): ?>
-                      <option value="<?php echo (int)$cat['id'] ?>">
-                          <?php echo $cat['name'] ?></option>
-                  <?php endforeach; ?>
-              </select>
 
-
-          <form class="navbar-form navbar-left">
-              <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-              </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-          </form>
 
         <div class="panel-heading clearfix">
          <div class="pull-right">
@@ -36,6 +22,24 @@ $all_categories = find_all('categories');
          </div>
         </div>
         <div class="panel-body">
+
+            <select class="form-control" name="product-categorie">
+                <option value="">Select Product Category</option>
+                <?php  foreach ($all_categories as $cat): ?>
+                    <option value="<?php echo (int)$cat['id'] ?>">
+                        <?php echo $cat['name'] ?></option>
+                <?php endforeach; ?>
+            </select>
+
+
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+
           <table class="table table-bordered">
             <thead>
               <tr>
