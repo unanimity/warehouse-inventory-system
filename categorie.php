@@ -79,6 +79,7 @@
                 <tr>
                     <td class="text-center"><?php echo count_id();?></td>
                     <td><?php echo remove_junk(ucfirst($cat['name'])); ?></td>
+                    <td><?php echo remove_junk(ucfirst($cat['sub_name'])); ?></td>
                     <td class="text-center">
                       <div class="btn-group">
                         <a href="edit_categorie.php?id=<?php echo (int)$cat['id'];?>"  class="btn btn-xs btn-warning" data-toggle="tooltip" title="Edit">
