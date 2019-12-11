@@ -31,7 +31,7 @@ debug_to_console($users[1]['name']);
        $p_cell_2  = remove_junk($db->escape($_POST['saleing-cell-2']));
        $p_cell_3  = remove_junk($db->escape($_POST['saleing-cell-3']));
        $p_code  = remove_junk($db->escape($_POST['saleing-code']));
-       $p_cell= $p_cell_1 . "-".$p_cell_2 ."-". $p_cell_3;
+       $p_cell= $p_cell_1;
 
      /**/
      if (is_null($_POST['product-photo']) || $_POST['product-photo'] === "") {
@@ -202,12 +202,7 @@ debug_to_console($users[1]['name']);
                            <label >Cell</label>
                            <input type="text" class="form-control" name="saleing-cell-1"  value=" ">
                        </div>
-                       <div class="input-group">
-                           <input type="text" class="form-control" name="saleing-cell-2"  value=" ">
-                       </div>
-                       <div class="input-group">
-                           <input type="text" class="form-control" name="saleing-cell-3"  value=" ">
-                       </div>
+
                    </div>
 
                    <div class="col-md-12">
