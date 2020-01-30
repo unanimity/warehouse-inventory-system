@@ -21,6 +21,9 @@
       <div class="header-date pull-left">
         <strong><?php echo date("F j, Y, g:i a");?></strong>
       </div>
+          <div class="header-right">
+              <img src="../libs/images/icons8-24.png">
+          </div>
       <div class="pull-right clearfix">
         <ul class="info-menu list-inline list-unstyled">
           <li class="profile">
