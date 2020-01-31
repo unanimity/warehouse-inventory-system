@@ -41,22 +41,22 @@
   <li>
     <a href="#" class="submenu-toggle">
       <i class="glyphicon glyphicon-th-list"></i>
-       <span>Sales</span>
+       <span>Orders</span>
       </a>
       <ul class="nav submenu">
-         <li><a href="sales.php">Manage Sales</a> </li>
-         <li><a href="add_sale.php">Add Sale</a> </li>
+         <li><a href="sales.php">Manage orders</a> </li>
+         <li><a href="add_sale.php">Add order</a> </li>
      </ul>
   </li>
     <li>
         <a href="#" class="submenu-toggle">
             <i class="glyphicon glyphicon-signal"></i>
-            <span>Sales Report</span>
+            <span>Orders Report</span>
         </a>
         <ul class="nav submenu">
-            <li><a href="sales_report.php">Sales by dates </a></li>
-            <li><a href="monthly_sales.php">Monthly sales</a></li>
-            <li><a href="daily_sales.php">Daily sales</a> </li>
+            <li><a href="sales_report.php">Orders by dates </a></li>
+            <li><a href="monthly_sales.php">Monthly orders</a></li>
+            <li><a href="daily_sales.php">Daily orders</a> </li>
         </ul>
     </li>
     <li>

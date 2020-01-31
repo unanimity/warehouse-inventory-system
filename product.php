@@ -51,9 +51,9 @@ $all_categories = find_all('categories');
                 <th class="text-center" style="width: 10%;"> Instock </th>
                 <th class="text-center" style="width: 10%;"> Discription</th>
                   <th class="text-center" style="width: 10%;"> Value </th>
-                  <th class="text-center"  > Dimension </th>
+
                   <th class="text-center"  > Cell </th>
-                <th class="text-center" style="width: 10%;"> Product Added </th>
+                <th class="text-center" style="width: 10%;"> Owner </th>
                 <th class="text-center" style="width: 100px;"> Actions </th>
               </tr>
             </thead>
@@ -80,17 +80,20 @@ $all_categories = find_all('categories');
                     </a>
                 </td>
                   <td class="text-center"> <?php echo remove_junk($product['value']); ?></td>
-                  <td class="text-center"> <?php echo remove_junk($product['dimension']); ?></td>
+
                   <td class="text-center"> <?php echo remove_junk($product['cell']); ?></td>
-                <td class="text-center"> <?php echo read_date($product['date']); ?><?php echo read_date($product['owner']); ?></td>
+                <td class="text-center"> <?php echo read_date($product['owner']); ?></td>
                 <td class="text-center">
                   <div class="btn-group">
                     <a href="edit_product.php?id=<?php echo (int)$product['id'];?>" class="btn btn-info btn-xs"  title="Edit" data-toggle="tooltip">
                       <span class="glyphicon glyphicon-edit"></span>
                     </a>
-                    <a href="delete_product.php?id=<?php echo (int)$product['id'];?>" class="btn btn-danger btn-xs"  title="Delete" data-toggle="tooltip">
-                      <span class="glyphicon glyphicon-trash"></span>
-                    </a>
+                      <a href="delete_product.php?id=<?php echo (int)$product['id'];?>" class="btn btn-danger btn-xs"  title="Delete" data-toggle="tooltip">
+                          <span class="glyphicon glyphicon-trash"></span>
+                      </a>
+                      <a href="order_product.php?id=<?php echo (int)$product['id'];?>" class="btn btn-success btn-xs"  title="Order it" data-toggle="tooltip">
+                          <span class="glyphicon glyphicon-trash"></span>
+                      </a>
                   </div>
                 </td>
               </tr>
