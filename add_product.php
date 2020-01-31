@@ -123,7 +123,6 @@ debug_to_console($users[1]['name']);
                  </div>
 
 
-
                  <div class="col-md-4">
                    <div class="input-group">
                      <span class="input-group-addon">
@@ -145,16 +144,12 @@ debug_to_console($users[1]['name']);
                        </div>
                    </div>
 
-
-
-
                    <div class="col-md-12">
                        <label>Description</label>
                        <div class="input-group">
                        <textarea class="form-control  "  name="saleing-discription" rows="3"></textarea>
                        </div>
                    </div>
-
 
 
                    <div class="col-md-12">
@@ -166,7 +161,6 @@ debug_to_console($users[1]['name']);
                            <option>Liquid</option>
                        </select>
                    </div>
-
 
                    <div class="col-md-12">
                        <div class="input-group">
@@ -184,8 +178,6 @@ debug_to_console($users[1]['name']);
                            <option>V</option>
                        </select>
                    </div>
-
-
 
                    <div class="col-md-12">
                        <label for="saleing-owner">Owner</label>
@@ -219,8 +211,6 @@ debug_to_console($users[1]['name']);
 
                        </div>
                    </div>
-
-
 
                </div>
               </div>

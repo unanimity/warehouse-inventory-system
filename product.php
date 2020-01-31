@@ -14,8 +14,6 @@ $all_categories = find_all('categories');
     <div class="col-md-12">
       <div class="panel panel-default">
 
-
-
         <div class="panel-heading clearfix">
          <div class="pull-right">
            <a href="add_product.php" class="btn btn-primary">Add New</a>
@@ -92,7 +90,7 @@ $all_categories = find_all('categories');
                           <span class="glyphicon glyphicon-trash"></span>
                       </a>
                       <a href="order_product.php?id=<?php echo (int)$product['id'];?>" class="btn btn-success btn-xs"  title="Order it" data-toggle="tooltip">
-                          <span class="glyphicon glyphicon-trash"></span>
+                          <span class="glyphicon glyphicon-save" style="font-size: 50px;"></span>
                       </a>
                   </div>
                 </td>
